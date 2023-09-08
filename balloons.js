@@ -39,6 +39,40 @@ $(function(){
 
     })
 
+    $('#all').on('click',function(e){
+        $('#red').prop('checked',true);
+        $('#green').prop('checked',true);
+        $('#blue').prop('checked',true)
+        
+    })
+
+    $('#none').on('click',function(e){
+        $('#red').prop('checked',false);
+        $('#green').prop('checked',false);
+        $('#blue').prop('checked',false);
+        
+    })
+
+    $('#red').hover(function(){
+        $('#animation').css({'color':'red'})
+    }, function(){
+        $('#animation').css({'color':'black'})
+    });
+
+    $('#green').hover(function(){
+        $('#animation').css({'color':'green'})
+    }, function(){
+        $('#animation').css({'color':'black'})
+    });
+
+    $('#blue').hover(function(){
+        $('#animation').css({'color':'blue'})
+    }, function(){
+        $('#animation').css({'color':'black'})
+    });
+
+    
+
 
 
 
