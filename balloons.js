@@ -23,6 +23,22 @@ $(function(){
         $('#animation').addClass(aniArray[num]);
     })
 
+    $('#submit').on('click', function(e){
+        let checked = false;
+        $('.form-check-input').each(function () {
+            if($(this).prop('checked')){
+                checked = true;
+            }
+        });
+
+        if(!checked)
+        {
+            $('#liveToast').toast({ autohide: false }).toast('show');
+        }
+
+
+    })
+
 
 
 
