@@ -29,7 +29,7 @@ $(function(){
             if($(this).prop('checked')){
                 checked = true;
             }
-        });
+        }); 
 
         if(!checked)
         {
@@ -43,14 +43,15 @@ $(function(){
         $('#red').prop('checked',true);
         $('#green').prop('checked',true);
         $('#blue').prop('checked',true)
-        
+
     })
 
     $('#none').on('click',function(e){
         $('#red').prop('checked',false);
         $('#green').prop('checked',false);
         $('#blue').prop('checked',false);
-        
+
+       
     })
 
     $('#red').hover(function(){
@@ -76,4 +77,5 @@ $(function(){
 
 
 
-});
+})
+
